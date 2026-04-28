@@ -1,7 +1,7 @@
 name: Hello World Workflow
 
 # triggers the workflow on every push
-on: [push]
+on: [pull_request]
 
 # groups the steps to be run
 jobs:
@@ -14,4 +14,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Say Hello
-        run: echo "👋 Hello from your first GitHub Action!"
+        run: echo "👋 Hello from your first GitHub Action! YOU PULLED!"
